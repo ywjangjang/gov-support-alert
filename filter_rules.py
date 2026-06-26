@@ -31,6 +31,17 @@ NON_COMPANY_REGIONS = [
     "강원도", "강원특별자치도",
     # 광역시·특별자치시
     "제주", "부산", "대구", "광주", "대전", "울산", "세종", "인천",
+    # 경상도 주요 도시
+    "창원시", "진주시", "포항시", "경주시", "구미시", "안동시", "김해시",
+    "거제시", "통영시", "사천시", "밀양시", "양산시", "거창군",
+    # 전라도 주요 도시
+    "전주시", "익산시", "군산시", "광양시", "여수시", "순천시", "목포시",
+    # 충청도 주요 도시
+    "청주시", "천안시", "아산시", "공주시", "논산시", "당진시",
+    # 강원 주요 도시
+    "춘천시", "원주시", "강릉시", "동해시", "속초시", "태백시",
+    # 제주
+    "제주시", "서귀포시",
 ]
 
 # 타 지역이 나와도 이것도 함께 있으면 당사 해당 가능 (전국/수도권/당사 지역)
@@ -76,8 +87,9 @@ def _euro(word):
 def judge(announcement, profile):
     title = announcement.get("title") or ""
     target = announcement.get("target") or ""
+    agency = announcement.get("agency") or ""
     region = announcement.get("region")
-    combined_text = f"{title} {target}"
+    combined_text = f"{title} {target} {agency}"
 
     matched_exclusion = _has_exclusion(combined_text)
     if matched_exclusion:
