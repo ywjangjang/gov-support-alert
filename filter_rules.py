@@ -56,20 +56,42 @@ EXCLUSION_KEYWORDS = [
     "신입직원", "상임이사", "이사장 공개모집", "체험형 인턴", "청년인턴",
 ]
 
-# 당사 업종(제조·식기세척기 렌탈·서비스)과 무관한 특정 업종 전용 공고 키워드
-EXCLUSION_INDUSTRIES = [
+# ── 업종 화이트리스트 방식 ─────────────────────────────────────────────────────
+# 공고에 업종 키워드가 등장할 때:
+#   INDUSTRY_WHITELIST 키워드가 하나라도 있으면 → 업종 관련성 있음 (통과)
+#   INDUSTRY_BLACKLIST 키워드만 있고 화이트리스트가 없으면 → 부적합
+#   아무 업종 키워드도 없으면 → 전 업종 대상으로 간주 (통과)
+
+# 뽀득이 해당될 수 있는 업종 키워드
+INDUSTRY_WHITELIST = [
+    # 제조
+    "제조", "제조업", "스마트제조", "장비", "기계", "금속", "소재",
+    # 렌탈·서비스
+    "렌탈", "리스", "구독", "서비스업", "유지보수", "애프터서비스",
+    # 위생·환경·세척
+    "위생", "세척", "청결", "청소", "환경", "에너지절감", "탄소중립", "클린",
+    # 디지털·자동화
+    "IoT", "스마트팩토리", "자동화", "디지털전환", "DX", "스마트기기",
+    # 물류·유통
+    "물류", "유통", "공급망",
+]
+
+# 뽀득과 무관한 특정 업종 키워드
+INDUSTRY_BLACKLIST = [
     # 뷰티·화장품
     "뷰티", "화장품", "코스메틱",
     # 콘텐츠·미디어·출판
-    "콘텐츠", "컨텐츠", "출판", "미디어", "방송", "영화", "드라마", "웹툰", "애니메이션",
-    # 바이오·제약·의료·헬스케어
+    "콘텐츠산업", "미디어산업", "출판", "방송산업", "영화산업", "드라마", "웹툰", "애니메이션",
+    # 바이오·제약·의료
     "바이오", "제약", "의약품", "의료기기", "헬스케어",
-    # 농업·수산·식품
+    # 방산·우주항공
+    "방산", "방위산업", "우주항공", "항공우주", "방위",
+    # 농업·수산·축산
     "농업", "농식품", "수산", "축산", "임업",
     # 관광·여행·숙박
-    "관광", "여행업", "숙박업",
-    # 게임
-    "게임산업", "게임개발",
+    "관광산업", "여행업", "숙박업",
+    # 게임·엔터테인먼트
+    "게임산업", "게임개발", "e스포츠",
     # 패션·섬유
     "패션산업", "섬유산업",
 ]
@@ -84,7 +106,7 @@ def _mentions_company_region(region_text, profile):
 
 
 def _title_implies_non_company_region(text):
-    """제목/대상 텍스트에 당사 소재지와 무관한 타 지역명만 나올 때 True 반환."""
+    """제목/대상/기관 텍스트에 당사 소재지와 무관한 타 지역명만 나올 때 True 반환."""
     if not any(r in text for r in NON_COMPANY_REGIONS):
         return False
     return not any(r in text for r in COMPANY_REGION_KEYWORDS)
@@ -94,8 +116,16 @@ def _has_exclusion(text):
     return next((kw for kw in EXCLUSION_KEYWORDS if kw in text), None)
 
 
-def _has_exclusion_industry(text):
-    return next((kw for kw in EXCLUSION_INDUSTRIES if kw in text), None)
+def _check_industry_fit(text):
+    """
+    업종 화이트리스트 검사.
+    - 화이트리스트 키워드가 하나라도 있으면 None 반환 (통과)
+    - 블랙리스트 키워드만 있으면 해당 키워드 반환 (부적합 처리용)
+    - 아무 키워드도 없으면 None 반환 (전 업종 대상으로 간주, 통과)
+    """
+    if any(kw in text for kw in INDUSTRY_WHITELIST):
+        return None
+    return next((kw for kw in INDUSTRY_BLACKLIST if kw in text), None)
 
 
 def _euro(word):
@@ -120,13 +150,6 @@ def judge(announcement, profile):
             "reason": f"지원대상이 '{matched_exclusion}'{_euro(matched_exclusion)} 한정되어 당사 조건과 맞지 않음",
         }
 
-    matched_industry = _has_exclusion_industry(combined_text)
-    if matched_industry:
-        return {
-            "status": "부적합",
-            "reason": f"당사 업종과 무관한 '{matched_industry}' 분야 전용 공고",
-        }
-
     if not _mentions_company_region(region, profile):
         return {
             "status": "부적합",
@@ -139,16 +162,23 @@ def judge(announcement, profile):
             "reason": "공고 제목/대상에 당사 사업장 소재지와 무관한 타 지역 한정 문구가 포함됨",
         }
 
+    mismatched_industry = _check_industry_fit(combined_text)
+    if mismatched_industry:
+        return {
+            "status": "부적합",
+            "reason": f"당사 업종과 무관한 '{mismatched_industry}' 분야 전용 공고",
+        }
+
     matched_keyword = next(
         (kw for kw in profile["interest_keywords"] if kw in combined_text), None
     )
     if matched_keyword:
         return {
             "status": "적합",
-            "reason": f"관심분야 키워드 '{matched_keyword}' 포함, 지역/지원대상 제한에 걸리지 않음",
+            "reason": f"관심분야 키워드 '{matched_keyword}' 포함, 지역/지원대상/업종 제한에 걸리지 않음",
         }
 
     return {
         "status": "모호",
-        "reason": "지역/지원대상 제한에는 걸리지 않으나 관심분야(R&D·인력채용·시설·운전자금) 키워드가 제목/대상에 명확히 보이지 않아 직접 확인 필요",
+        "reason": "지역/지원대상/업종 제한에는 걸리지 않으나 관심분야(R&D·인력채용·시설·운전자금) 키워드가 제목/대상에 명확히 보이지 않아 직접 확인 필요",
     }
