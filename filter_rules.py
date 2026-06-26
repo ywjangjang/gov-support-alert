@@ -17,6 +17,21 @@ judge()는 위 dict와 회사 프로필을 받아 {"status": "적합"|"모호"|"
 나중에 LLM 2차 판단(llm_judge.py)을 추가할 때도 같은 입출력 형태를 쓰면 끼워넣기 쉽습니다.
 """
 
+# 당사 소재지(서울/경기)와 무관한 타 지역 키워드
+NON_COMPANY_REGIONS = [
+    "경북", "경상북도",
+    "경남", "경상남도",
+    "전북", "전라북도",
+    "전남", "전라남도",
+    "충북", "충청북도",
+    "충남", "충청남도",
+    "강원도", "강원특별자치도",
+    "제주", "부산", "대구", "광주", "대전", "울산", "세종", "인천",
+]
+
+# 타 지역이 나와도 이것도 함께 있으면 당사 해당 가능 (전국/수도권/당사 지역)
+COMPANY_REGION_KEYWORDS = ["전국", "수도권", "서울", "경기", "화성"]
+
 # 회사가 해당되지 않는 게 명백한 지원대상 한정 문구들
 EXCLUSION_KEYWORDS = [
     "예비창업자", "예비창업패키지", "1인 기업", "소상공인 전용",
@@ -33,6 +48,13 @@ def _mentions_company_region(region_text, profile):
     if "전국" in region_text:
         return True
     return any(loc in region_text for loc in profile["locations"])
+
+
+def _title_implies_non_company_region(text):
+    """제목/대상 텍스트에 당사 소재지와 무관한 타 지역명만 나올 때 True 반환."""
+    if not any(r in text for r in NON_COMPANY_REGIONS):
+        return False
+    return not any(r in text for r in COMPANY_REGION_KEYWORDS)
 
 
 def _has_exclusion(text):
@@ -64,6 +86,12 @@ def judge(announcement, profile):
         return {
             "status": "부적합",
             "reason": f"지원지역이 '{region}'{_euro(region)} 한정되어 당사 사업장 소재지와 맞지 않음",
+        }
+
+    if _title_implies_non_company_region(combined_text):
+        return {
+            "status": "부적합",
+            "reason": "공고 제목/대상에 당사 사업장 소재지와 무관한 타 지역 한정 문구가 포함됨",
         }
 
     matched_keyword = next(
