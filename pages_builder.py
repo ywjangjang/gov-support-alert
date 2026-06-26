@@ -17,6 +17,31 @@ th, td { border-bottom: 1px solid #d0d7de; padding: 8px; text-align: left; verti
 th { background: #f6f8fa; }
 .badge { padding: 2px 8px; border-radius: 12px; color: white; font-size: 12px; white-space: nowrap; }
 nav a { margin-right: 12px; }
+.filter-bar { margin: 1rem 0; display: flex; gap: 8px; flex-wrap: wrap; }
+.filter-btn { padding: 6px 16px; border: 1px solid #d0d7de; border-radius: 20px; background: white; cursor: pointer; font-size: 13px; }
+.filter-btn.active { color: white; border-color: transparent; }
+.filter-btn[data-status="전체"].active { background: #1f2328; }
+.filter-btn[data-status="적합"].active { background: #1a7f37; }
+.filter-btn[data-status="모호"].active { background: #9a6700; }
+.filter-btn[data-status="부적합"].active { background: #6e7781; }
+#count { font-size: 13px; color: #57606a; margin-left: 8px; }
+"""
+
+PAGE_JS = """
+const buttons = document.querySelectorAll('.filter-btn');
+const rows = document.querySelectorAll('tbody tr');
+function applyFilter(status) {
+  let visible = 0;
+  rows.forEach(row => {
+    const match = status === '전체' || row.dataset.status === status;
+    row.style.display = match ? '' : 'none';
+    if (match) visible++;
+  });
+  document.getElementById('count').textContent = visible + '건';
+  buttons.forEach(b => b.classList.toggle('active', b.dataset.status === status));
+}
+buttons.forEach(b => b.addEventListener('click', () => applyFilter(b.dataset.status)));
+applyFilter('전체');
 """
 
 
@@ -67,7 +92,7 @@ def _row_html(row):
     title = html.escape(row["title"])
     title_cell = f'<a href="{html.escape(row["url"])}" target="_blank">{title}</a>' if row.get("url") else title
     return (
-        "<tr>"
+        f'<tr data-status="{status}">'
         f'<td>{html.escape(row["collected_date"])}</td>'
         f'<td><span class="badge" style="background:{color}">{status}</span></td>'
         f'<td>{html.escape(row["source"])}</td>'
@@ -94,13 +119,21 @@ def _build_month_page(month, rows):
 </head>
 <body>
 <nav><a href="index.html">&larr; 월별 목록</a></nav>
-<h1>{month} 정부지원사업 공고 ({len(rows_sorted)}건)</h1>
+<h1>{month} 정부지원사업 공고</h1>
+<div class="filter-bar">
+  <button class="filter-btn active" data-status="전체">전체</button>
+  <button class="filter-btn" data-status="적합">적합</button>
+  <button class="filter-btn" data-status="모호">모호</button>
+  <button class="filter-btn" data-status="부적합">부적합</button>
+  <span id="count"></span>
+</div>
 <table>
 <thead><tr><th>수집일</th><th>판단</th><th>출처</th><th>공고명</th><th>마감일</th><th>판단 이유</th></tr></thead>
 <tbody>
 {body_rows}
 </tbody>
 </table>
+<script>{PAGE_JS}</script>
 </body>
 </html>
 """
