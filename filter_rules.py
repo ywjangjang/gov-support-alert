@@ -56,6 +56,24 @@ EXCLUSION_KEYWORDS = [
     "신입직원", "상임이사", "이사장 공개모집", "체험형 인턴", "청년인턴",
 ]
 
+# 당사 업종(제조·식기세척기 렌탈·서비스)과 무관한 특정 업종 전용 공고 키워드
+EXCLUSION_INDUSTRIES = [
+    # 뷰티·화장품
+    "뷰티", "화장품", "코스메틱",
+    # 콘텐츠·미디어·출판
+    "콘텐츠", "컨텐츠", "출판", "미디어", "방송", "영화", "드라마", "웹툰", "애니메이션",
+    # 바이오·제약·의료·헬스케어
+    "바이오", "제약", "의약품", "의료기기", "헬스케어",
+    # 농업·수산·식품
+    "농업", "농식품", "수산", "축산", "임업",
+    # 관광·여행·숙박
+    "관광", "여행업", "숙박업",
+    # 게임
+    "게임산업", "게임개발",
+    # 패션·섬유
+    "패션산업", "섬유산업",
+]
+
 
 def _mentions_company_region(region_text, profile):
     if not region_text:
@@ -74,6 +92,10 @@ def _title_implies_non_company_region(text):
 
 def _has_exclusion(text):
     return next((kw for kw in EXCLUSION_KEYWORDS if kw in text), None)
+
+
+def _has_exclusion_industry(text):
+    return next((kw for kw in EXCLUSION_INDUSTRIES if kw in text), None)
 
 
 def _euro(word):
@@ -96,6 +118,13 @@ def judge(announcement, profile):
         return {
             "status": "부적합",
             "reason": f"지원대상이 '{matched_exclusion}'{_euro(matched_exclusion)} 한정되어 당사 조건과 맞지 않음",
+        }
+
+    matched_industry = _has_exclusion_industry(combined_text)
+    if matched_industry:
+        return {
+            "status": "부적합",
+            "reason": f"당사 업종과 무관한 '{matched_industry}' 분야 전용 공고",
         }
 
     if not _mentions_company_region(region, profile):
