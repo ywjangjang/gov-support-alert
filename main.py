@@ -34,16 +34,19 @@ def collect_all():
     return collected
 
 
-def format_slack_message(ann, judged):
-    lines = [
-        f"*[{judged['status']}] {ann['title']}*",
-        f"출처: {ann['source']}" + (f" ({ann['agency']})" if ann.get("agency") else ""),
-    ]
-    if ann.get("end_date"):
-        lines.append(f"마감일: {ann['end_date']}")
-    lines.append(f"판단 이유: {judged['reason']}")
-    if ann.get("url"):
-        lines.append(ann["url"])
+PAGES_URL = "https://ywjangjang.github.io/gov-support-alert/"
+
+
+def format_summary_slack_message(new_fitting):
+    count = len(new_fitting)
+    lines = [f"새 지원사업 공고 *{count}건*이 올라왔습니다."]
+    for ann, judged in new_fitting[:5]:
+        label = f"[{judged['status']}]"
+        end = f" (~{ann['end_date']})" if ann.get("end_date") else ""
+        lines.append(f"• {label} {ann['title']}{end}")
+    if count > 5:
+        lines.append(f"• 외 {count - 5}건")
+    lines.append(f"\n자세히 보기: {PAGES_URL}")
     return "\n".join(lines)
 
 
@@ -56,17 +59,16 @@ def main():
     new_announcements = seen_store.pick_new(announcements, seen)
     new_ids = {ann["id"] for ann in new_announcements}
 
-    notify_count = 0
-    for ann, judged in judged_all:
-        if ann["id"] not in new_ids or judged["status"] == "부적합":
-            continue
-        if not config.SLACK_WEBHOOK_URL:
-            continue
-        notifier.send_slack_message(config.SLACK_WEBHOOK_URL, format_slack_message(ann, judged))
-        notify_count += 1
+    new_fitting = [
+        (ann, judged) for ann, judged in judged_all
+        if ann["id"] in new_ids and judged["status"] != "부적합"
+    ]
+
+    if new_fitting and config.SLACK_WEBHOOK_URL:
+        notifier.send_slack_message(config.SLACK_WEBHOOK_URL, format_summary_slack_message(new_fitting))
 
     seen_store.save_seen(config.SEEN_ANNOUNCEMENTS_FILE, seen)
-    print(f"총 {len(announcements)}건 수집, 신규 {len(new_announcements)}건, Slack 알림 {notify_count}건 발송")
+    print(f"총 {len(announcements)}건 수집, 신규 {len(new_announcements)}건, Slack 알림 {len(new_fitting)}건 요약 발송")
 
 
 if __name__ == "__main__":
