@@ -10,6 +10,14 @@ th, td { border-bottom: 1px solid #d0d7de; padding: 8px; text-align: left; verti
 th { background: #f6f8fa; }
 .badge { padding: 2px 8px; border-radius: 12px; color: white; font-size: 12px; white-space: nowrap; }
 nav a { margin-right: 12px; }
+.filter-bar { margin: 1rem 0; display: flex; gap: 8px; flex-wrap: wrap; }
+.filter-btn { padding: 6px 16px; border: 1px solid #d0d7de; border-radius: 20px; background: white; cursor: pointer; font-size: 13px; }
+.filter-btn.active { color: white; border-color: transparent; }
+.filter-btn[data-status="전체"].active { background: #1f2328; }
+.filter-btn[data-status="적합"].active { background: #1a7f37; }
+.filter-btn[data-status="모호"].active { background: #9a6700; }
+.filter-btn[data-status="부적합"].active { background: #6e7781; }
+#count { font-size: 13px; color: #57606a; margin-left: 8px; }
 </style>
 </head>
 <body>
