@@ -933,5 +933,104 @@
     "status": "부적합",
     "reason": "지원대상이 '청년인턴'으로 한정되어 당사 조건과 맞지 않음",
     "collected_date": "2026-06-26"
+  },
+  {
+    "id": "K스타트업-178300",
+    "source": "K-스타트업",
+    "title": "2026 Tech 기업 글로벌 IR 고도화 및 투자상담회",
+    "agency": "차세대융합기술연구원",
+    "end_date": "20260715",
+    "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=178300",
+    "status": "모호",
+    "reason": "지역/지원대상/업종 제한에는 걸리지 않으나 관심분야(R&D·인력채용·시설·운전자금) 키워드가 제목/대상에 명확히 보이지 않아 직접 확인 필요",
+    "collected_date": "2026-06-27"
+  },
+  {
+    "id": "K스타트업-178297",
+    "source": "K-스타트업",
+    "title": "2026 실무형 스타트업 클래스 참가 기업 모집",
+    "agency": "북성로청년창업클러스터",
+    "end_date": "20260710",
+    "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=178297",
+    "status": "부적합",
+    "reason": "지원대상이 '청년창업'으로 한정되어 당사 조건과 맞지 않음",
+    "collected_date": "2026-06-27"
+  },
+  {
+    "id": "K스타트업-178296",
+    "source": "K-스타트업",
+    "title": "2026 생활발명코리아 시제품 제작 수행사 모집",
+    "agency": "(사)한국여성발명협회",
+    "end_date": "20260705",
+    "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=178296",
+    "status": "적합",
+    "reason": "관심분야 키워드 '인력' 포함, 지역/지원대상/업종 제한에 걸리지 않음",
+    "collected_date": "2026-06-27"
+  },
+  {
+    "id": "K스타트업-178295",
+    "source": "K-스타트업",
+    "title": "(소방청 공고 제2026-92호) 2026년 소방장비·용품 공공조달 컨설팅 지원사업 참여업체 모집 공고",
+    "agency": "(주)선영파트너스",
+    "end_date": "20260831",
+    "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=178295",
+    "status": "적합",
+    "reason": "관심분야 키워드 '시설' 포함, 지역/지원대상/업종 제한에 걸리지 않음",
+    "collected_date": "2026-06-27"
+  },
+  {
+    "id": "K스타트업-178293",
+    "source": "K-스타트업",
+    "title": "2026년 메드텍스쿨 (의료기기) 상반기 11기 수강자 모집",
+    "agency": "충북창조경제혁신센터",
+    "end_date": "20260710",
+    "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=178293",
+    "status": "부적합",
+    "reason": "지원지역이 '충북'으로 한정되어 당사 사업장 소재지와 맞지 않음",
+    "collected_date": "2026-06-27"
+  },
+  {
+    "id": "K스타트업-178292",
+    "source": "K-스타트업",
+    "title": "2026 글로벌 공공조달 DX·AX 혁신 리더 과정(2기) 세미나 모집",
+    "agency": "(주)글로벌창업연구소",
+    "end_date": "20260805",
+    "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=178292",
+    "status": "모호",
+    "reason": "지역/지원대상/업종 제한에는 걸리지 않으나 관심분야(R&D·인력채용·시설·운전자금) 키워드가 제목/대상에 명확히 보이지 않아 직접 확인 필요",
+    "collected_date": "2026-06-27"
+  },
+  {
+    "id": "K스타트업-178291",
+    "source": "K-스타트업",
+    "title": "2026년 수원도시재단 창업지원센터 창업특강(아이디어에서 창업까지) 참가자 모집",
+    "agency": "수원도시재단",
+    "end_date": "20260712",
+    "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=178291",
+    "status": "모호",
+    "reason": "지역/지원대상/업종 제한에는 걸리지 않으나 관심분야(R&D·인력채용·시설·운전자금) 키워드가 제목/대상에 명확히 보이지 않아 직접 확인 필요",
+    "collected_date": "2026-06-27"
+  },
+  {
+    "id": "K스타트업-178290",
+    "source": "K-스타트업",
+    "title": "[강동구 청년해냄센터] 입주기업 모집",
+    "agency": "강동구 청년해냄센터",
+    "end_date": "20260712",
+    "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=178290",
+    "status": "부적합",
+    "reason": "지원대상이 '예비창업자'로 한정되어 당사 조건과 맞지 않음",
+    "collected_date": "2026-06-27"
+  },
+  {
+    "id": "K스타트업-178273",
+    "source": "K-스타트업",
+    "title": "SNU Venture Builder 시즌5 참가팀 모집(정부지원사업 및 투자유치 성장 프로젝트)",
+    "agency": "서울대학교 시흥캠퍼스본부",
+    "end_date": "20260712",
+    "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=178273",
+    "status": "모호",
+    "reason": "지역/지원대상/업종 제한에는 걸리지 않으나 관심분야(R&D·인력채용·시설·운전자금) 키워드가 제목/대상에 명확히 보이지 않아 직접 확인 필요",
+    "collected_date": "2026-06-27"
   }
 ]
