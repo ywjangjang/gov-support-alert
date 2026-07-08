@@ -2880,5 +2880,203 @@
     "status": "부적합",
     "reason": "지원지역이 '대전'으로 한정되어 당사 사업장 소재지와 맞지 않음",
     "collected_date": "2026-07-07"
+  },
+  {
+    "id": "K스타트업-178452",
+    "source": "K-스타트업",
+    "title": "2026년 해양수산 창업투자지원사업 제4차 참여기업 모집공고",
+    "agency": "(재)환동해산업연구원장",
+    "end_date": "20260724",
+    "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=178452",
+    "status": "부적합",
+    "reason": "지원대상이 '예비창업자'로 한정되어 당사 조건과 맞지 않음",
+    "collected_date": "2026-07-08"
+  },
+  {
+    "id": "K스타트업-178446",
+    "source": "K-스타트업",
+    "title": "2026 지역창업 페스티벌 연계 제105회 대전창업포럼(바이오) 참가 모집",
+    "agency": "(재)대전창조경제혁신센터",
+    "end_date": "20260720",
+    "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=178446",
+    "status": "부적합",
+    "reason": "당사 업종과 무관한 '바이오' 분야 전용 공고",
+    "collected_date": "2026-07-08"
+  },
+  {
+    "id": "K스타트업-178444",
+    "source": "K-스타트업",
+    "title": "2026년 그린바이오 분야 공공기술 상용화 지원사업 추가 모집 공고",
+    "agency": "한국농업기술진흥원",
+    "end_date": "20260710",
+    "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=178444",
+    "status": "부적합",
+    "reason": "당사 업종과 무관한 '바이오' 분야 전용 공고",
+    "collected_date": "2026-07-08"
+  },
+  {
+    "id": "K스타트업-178442",
+    "source": "K-스타트업",
+    "title": "[제주창조경제혁신센터] 2026 친환경 에너지 오픈 그라운드 프로그램 with 한화솔루션",
+    "agency": "재단법인 제주창조경제혁신센터",
+    "end_date": "20260710",
+    "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=178442",
+    "status": "부적합",
+    "reason": "지원지역이 '제주'로 한정되어 당사 사업장 소재지와 맞지 않음",
+    "collected_date": "2026-07-08"
+  },
+  {
+    "id": "K스타트업-178439",
+    "source": "K-스타트업",
+    "title": "2026년 대전 스타트업스쿨 스타트업 리딩클래스 (2회차 ㅣ 링크드인 Sales 1위가 알려주는 퍼스널 브랜딩의 핵심 노하우와 B2B 매출 플레이북 실전 사례)",
+    "agency": "대전창조경제혁신센터",
+    "end_date": "20260728",
+    "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=178439",
+    "status": "부적합",
+    "reason": "공고 제목/대상에 당사 사업장 소재지와 무관한 타 지역 한정 문구가 포함됨",
+    "collected_date": "2026-07-08"
+  },
+  {
+    "id": "K스타트업-178438",
+    "source": "K-스타트업",
+    "title": "NOROO Industrial Bio CONNECT 2026 오픈이노베이션 프로그램",
+    "agency": "(주)아이비유",
+    "end_date": "20260731",
+    "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=178438",
+    "status": "모호",
+    "reason": "지역/지원대상/업종 제한에는 걸리지 않으나 관심분야(R&D·인력채용·시설·운전자금) 키워드가 제목/대상에 명확히 보이지 않아 직접 확인 필요",
+    "collected_date": "2026-07-08"
+  },
+  {
+    "id": "K스타트업-178436",
+    "source": "K-스타트업",
+    "title": "2026년 대구콘텐츠코리아랩 추경 사업 미드폼 콘텐츠 제작지원 참가기업 모집",
+    "agency": "(재)대구디지털혁신진흥원",
+    "end_date": "20260727",
+    "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=178436",
+    "status": "부적합",
+    "reason": "지원지역이 '대구'로 한정되어 당사 사업장 소재지와 맞지 않음",
+    "collected_date": "2026-07-08"
+  },
+  {
+    "id": "K스타트업-178435",
+    "source": "K-스타트업",
+    "title": "2026년 제주 중장년 기술창업센터 입주기업 모집",
+    "agency": "제주 중장년 기술창업센터",
+    "end_date": "20260729",
+    "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=178435",
+    "status": "부적합",
+    "reason": "지원지역이 '제주'로 한정되어 당사 사업장 소재지와 맞지 않음",
+    "collected_date": "2026-07-08"
+  },
+  {
+    "id": "K스타트업-178434",
+    "source": "K-스타트업",
+    "title": "2026 수원기업IR데이 수원. 판(PANN) 참여 기업 추가 모집",
+    "agency": "수원시장",
+    "end_date": "20260715",
+    "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=178434",
+    "status": "모호",
+    "reason": "지역/지원대상/업종 제한에는 걸리지 않으나 관심분야(R&D·인력채용·시설·운전자금) 키워드가 제목/대상에 명확히 보이지 않아 직접 확인 필요",
+    "collected_date": "2026-07-08"
+  },
+  {
+    "id": "K스타트업-178433",
+    "source": "K-스타트업",
+    "title": "창업On 희망On  참여자 모집 공고",
+    "agency": "(재)경북창조경제혁신센터 대표이사",
+    "end_date": "20260710",
+    "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=178433",
+    "status": "부적합",
+    "reason": "지원대상이 '예비창업자'로 한정되어 당사 조건과 맞지 않음",
+    "collected_date": "2026-07-08"
+  },
+  {
+    "id": "K스타트업-178432",
+    "source": "K-스타트업",
+    "title": "2026년 서울시 프렙 아카데미 하반기 11기 교육생 모집(7/6~8/3)",
+    "agency": "서울신용보증재단",
+    "end_date": "20260803",
+    "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=178432",
+    "status": "모호",
+    "reason": "지역/지원대상/업종 제한에는 걸리지 않으나 관심분야(R&D·인력채용·시설·운전자금) 키워드가 제목/대상에 명확히 보이지 않아 직접 확인 필요",
+    "collected_date": "2026-07-08"
+  },
+  {
+    "id": "K스타트업-178430",
+    "source": "K-스타트업",
+    "title": "2026년 서울창업허브 공덕 추천선발 입주기업 모집",
+    "agency": "서울경제진흥원",
+    "end_date": "20260716",
+    "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=178430",
+    "status": "모호",
+    "reason": "지역/지원대상/업종 제한에는 걸리지 않으나 관심분야(R&D·인력채용·시설·운전자금) 키워드가 제목/대상에 명확히 보이지 않아 직접 확인 필요",
+    "collected_date": "2026-07-08"
+  },
+  {
+    "id": "K스타트업-178427",
+    "source": "K-스타트업",
+    "title": "2026 서울테크서밋: AI x Bio 포럼",
+    "agency": "서울경제진흥원",
+    "end_date": "20260716",
+    "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=178427",
+    "status": "모호",
+    "reason": "지역/지원대상/업종 제한에는 걸리지 않으나 관심분야(R&D·인력채용·시설·운전자금) 키워드가 제목/대상에 명확히 보이지 않아 직접 확인 필요",
+    "collected_date": "2026-07-08"
+  },
+  {
+    "id": "TIPA-S02873",
+    "source": "TIPA",
+    "title": "2026년도 제1차 한국무역보험공사 연계 수출지원프로그램 시행계획 안내",
+    "agency": "수출지원프로그램",
+    "end_date": "2026. 07. 27",
+    "url": "https://www.smtech.go.kr/front/ifg/no/notice02_detail.do?buclYy=&ancmId=S02873&buclCd=S9121&dtlAncmSn=1&schdSe=MO5005&aplySn=1&searchCondition=&searchKeyword=&pageIndex=1",
+    "status": "모호",
+    "reason": "지역/지원대상/업종 제한에는 걸리지 않으나 관심분야(R&D·인력채용·시설·운전자금) 키워드가 제목/대상에 명확히 보이지 않아 직접 확인 필요",
+    "collected_date": "2026-07-08"
+  },
+  {
+    "id": "TIPA-2026년도 중소기업기술혁신개발사업 글로벌선도기술개발(이어달리기) 공고",
+    "source": "TIPA",
+    "title": "2026년도 중소기업기술혁신개발사업 글로벌선도기술개발(이어달리기) 공고",
+    "agency": "★중소기업기술혁신개발사업(글로벌선도기술개발)",
+    "end_date": "2026. 07. 22",
+    "url": "https://www.smtech.go.kr/front/ifg/no/notice02_list.do",
+    "status": "적합",
+    "reason": "관심분야 키워드 '기술개발' 포함, 지역/지원대상/업종 제한에 걸리지 않음",
+    "collected_date": "2026-07-08"
+  },
+  {
+    "id": "TIPA-2026년도 중소기업기술혁신개발사업 글로벌선도기술개발(함께달리기) 공고",
+    "source": "TIPA",
+    "title": "2026년도 중소기업기술혁신개발사업 글로벌선도기술개발(함께달리기) 공고",
+    "agency": "★중소기업기술혁신개발사업(글로벌선도기술개발)",
+    "end_date": "2026. 07. 22",
+    "url": "https://www.smtech.go.kr/front/ifg/no/notice02_list.do",
+    "status": "적합",
+    "reason": "관심분야 키워드 '기술개발' 포함, 지역/지원대상/업종 제한에 걸리지 않음",
+    "collected_date": "2026-07-08"
+  },
+  {
+    "id": "TIPA-2026년도 중소기업기술혁신개발사업 글로벌선도기술개발(수출지향형) 바이오헬스 추천기업 대상 연구개발계획서 제출 안내",
+    "source": "TIPA",
+    "title": "2026년도 중소기업기술혁신개발사업 글로벌선도기술개발(수출지향형) 바이오헬스 추천기업 대상 연구개발계획서 제출 안내",
+    "agency": "★중소기업기술혁신개발사업(글로벌선도기술개발)",
+    "end_date": "2026. 07. 22",
+    "url": "https://www.smtech.go.kr/front/ifg/no/notice02_list.do",
+    "status": "부적합",
+    "reason": "당사 업종과 무관한 '바이오' 분야 전용 공고",
+    "collected_date": "2026-07-08"
+  },
+  {
+    "id": "TIPA-S02866",
+    "source": "TIPA",
+    "title": "2026년 테크노파크 생산장비 고도화 제2차 지원계획 선정기관 과제접수 공고",
+    "agency": "산업기술단지거점기능강화",
+    "end_date": "2026. 07. 17",
+    "url": "https://www.smtech.go.kr/front/ifg/no/notice02_detail.do?buclYy=&ancmId=S02866&buclCd=S8012&dtlAncmSn=1&schdSe=MO5005&aplySn=2&searchCondition=&searchKeyword=&pageIndex=1",
+    "status": "모호",
+    "reason": "지역/지원대상/업종 제한에는 걸리지 않으나 관심분야(R&D·인력채용·시설·운전자금) 키워드가 제목/대상에 명확히 보이지 않아 직접 확인 필요",
+    "collected_date": "2026-07-08"
   }
 ]
