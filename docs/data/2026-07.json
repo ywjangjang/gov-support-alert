@@ -6543,5 +6543,137 @@
     "status": "모호",
     "reason": "지역/지원대상/업종 제한에는 걸리지 않으나 관심분야(R&D·인력채용·시설·운전자금) 키워드가 제목/대상에 명확히 보이지 않아 직접 확인 필요",
     "collected_date": "2026-07-17"
+  },
+  {
+    "id": "K스타트업-178605",
+    "source": "K-스타트업",
+    "title": "「민관협력 오픈이노베이션 지원」2026년  제2차 민간 선별추천형(Bottom-Up) 창업기업 모집공고",
+    "agency": "창업진흥원장",
+    "end_date": "20260731",
+    "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=178605",
+    "status": "모호",
+    "reason": "지역/지원대상/업종 제한에는 걸리지 않으나 관심분야(R&D·인력채용·시설·운전자금) 키워드가 제목/대상에 명확히 보이지 않아 직접 확인 필요",
+    "collected_date": "2026-07-21"
+  },
+  {
+    "id": "K스타트업-178602",
+    "source": "K-스타트업",
+    "title": "[경기도 중장년 최초 창업 지원] 2026년 생애 최초 경영안정화 교육지원 사업",
+    "agency": "경기도시장상권진흥원",
+    "end_date": "20260722",
+    "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=178602",
+    "status": "부적합",
+    "reason": "지원대상이 '예비창업자'로 한정되어 당사 조건과 맞지 않음",
+    "collected_date": "2026-07-21"
+  },
+  {
+    "id": "K스타트업-178595",
+    "source": "K-스타트업",
+    "title": "2026. 마을·청년 공유 플랫폼 하반기 예비창업팀 추가 모집",
+    "agency": "중원유스센터",
+    "end_date": "20260803",
+    "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=178595",
+    "status": "부적합",
+    "reason": "지원대상이 '예비창업자'로 한정되어 당사 조건과 맞지 않음",
+    "collected_date": "2026-07-21"
+  },
+  {
+    "id": "K스타트업-178593",
+    "source": "K-스타트업",
+    "title": "삼성 EPC 3사 2026 ConTech 공모전 모집 공고",
+    "agency": "삼성E&A, 삼성물산 건설부문, 삼성중공업",
+    "end_date": "20260821",
+    "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=178593",
+    "status": "모호",
+    "reason": "지역/지원대상/업종 제한에는 걸리지 않으나 관심분야(R&D·인력채용·시설·운전자금) 키워드가 제목/대상에 명확히 보이지 않아 직접 확인 필요",
+    "collected_date": "2026-07-21"
+  },
+  {
+    "id": "K스타트업-178592",
+    "source": "K-스타트업",
+    "title": "2026  콘텐츠 스타트업 글로벌 엑셀러레이팅 프로그램(론치패드 UAE, 싱가포르) 참가기업 추가 모집",
+    "agency": "한국콘텐츠진흥원",
+    "end_date": "20260727",
+    "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=178592",
+    "status": "모호",
+    "reason": "지역/지원대상/업종 제한에는 걸리지 않으나 관심분야(R&D·인력채용·시설·운전자금) 키워드가 제목/대상에 명확히 보이지 않아 직접 확인 필요",
+    "collected_date": "2026-07-21"
+  },
+  {
+    "id": "K스타트업-178590",
+    "source": "K-스타트업",
+    "title": "[MYSC] 2026 FIN:NECT 해외 데모데이 참가기업 모집 (~8/2)",
+    "agency": "엠와이소셜컴퍼니",
+    "end_date": "20260802",
+    "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=178590",
+    "status": "모호",
+    "reason": "지역/지원대상/업종 제한에는 걸리지 않으나 관심분야(R&D·인력채용·시설·운전자금) 키워드가 제목/대상에 명확히 보이지 않아 직접 확인 필요",
+    "collected_date": "2026-07-21"
+  },
+  {
+    "id": "K스타트업-178589",
+    "source": "K-스타트업",
+    "title": "2026년 여성창업 사업화지원사업(2차) 참여자 모집",
+    "agency": "달구벌여성인력개발센터",
+    "end_date": "20260917",
+    "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=178589",
+    "status": "부적합",
+    "reason": "지원지역이 '대구'로 한정되어 당사 사업장 소재지와 맞지 않음",
+    "collected_date": "2026-07-21"
+  },
+  {
+    "id": "K스타트업-178585",
+    "source": "K-스타트업",
+    "title": "[국민대학교 캠퍼스타운사업단] 2026 지역 현안 문제해결 연계 '성북 ON 창업교육 프로그램' 참가자 모집 (~7/29)",
+    "agency": "국민대학교 캠퍼스타운사업단",
+    "end_date": "20260729",
+    "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=178585",
+    "status": "모호",
+    "reason": "지역/지원대상/업종 제한에는 걸리지 않으나 관심분야(R&D·인력채용·시설·운전자금) 키워드가 제목/대상에 명확히 보이지 않아 직접 확인 필요",
+    "collected_date": "2026-07-21"
+  },
+  {
+    "id": "K스타트업-178580",
+    "source": "K-스타트업",
+    "title": "[창업] 스타트업 제안 및 영업 전략",
+    "agency": "마포청년창업취업지원센터 나루",
+    "end_date": "20260805",
+    "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=178580",
+    "status": "부적합",
+    "reason": "지원대상이 '청년창업'으로 한정되어 당사 조건과 맞지 않음",
+    "collected_date": "2026-07-21"
+  },
+  {
+    "id": "K스타트업-178579",
+    "source": "K-스타트업",
+    "title": "[창업] 특허·상표 지식재산권 실무",
+    "agency": "마포청년창업취업지원센터 나루",
+    "end_date": "20260814",
+    "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=178579",
+    "status": "부적합",
+    "reason": "지원대상이 '청년창업'으로 한정되어 당사 조건과 맞지 않음",
+    "collected_date": "2026-07-21"
+  },
+  {
+    "id": "K스타트업-178577",
+    "source": "K-스타트업",
+    "title": "강북창업지원센터 [브랜드 창업 아카데미] 교육 참여자 모집",
+    "agency": "강북창업지원센터",
+    "end_date": "20260726",
+    "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=178577",
+    "status": "모호",
+    "reason": "지역/지원대상/업종 제한에는 걸리지 않으나 관심분야(R&D·인력채용·시설·운전자금) 키워드가 제목/대상에 명확히 보이지 않아 직접 확인 필요",
+    "collected_date": "2026-07-21"
+  },
+  {
+    "id": "K스타트업-178575",
+    "source": "K-스타트업",
+    "title": "2026년「BTS」(Blueprint To Success) - 마인드 마이너 송길영 작가",
+    "agency": "광운대학교 NCI창업패키지사업단",
+    "end_date": "20260801",
+    "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=178575",
+    "status": "모호",
+    "reason": "지역/지원대상/업종 제한에는 걸리지 않으나 관심분야(R&D·인력채용·시설·운전자금) 키워드가 제목/대상에 명확히 보이지 않아 직접 확인 필요",
+    "collected_date": "2026-07-21"
   }
 ]
