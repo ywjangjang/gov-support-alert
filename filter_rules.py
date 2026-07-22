@@ -169,8 +169,12 @@ def judge(announcement, profile):
             "reason": f"당사 업종과 무관한 '{mismatched_industry}' 분야 전용 공고",
         }
 
+    # 관심키워드 매칭에는 소관기관명(agency)을 넣지 않는다.
+    # '고용'이 '고용노동부', '인력'이 'OO인력개발센터'처럼 기관명에 우연히 포함돼
+    # 무관한 공고가 '적합'으로 오분류되는 것을 막기 위함. 진짜 적합 공고는 제목/대상에 키워드가 있다.
+    interest_text = f"{title} {target}"
     matched_keyword = next(
-        (kw for kw in profile["interest_keywords"] if kw in combined_text), None
+        (kw for kw in profile["interest_keywords"] if kw in interest_text), None
     )
     if matched_keyword:
         return {
