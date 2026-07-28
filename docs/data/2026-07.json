@@ -9018,5 +9018,27 @@
     "status": "모호",
     "reason": "지역/지원대상/업종 제한에는 걸리지 않으나 관심분야(R&D·인력채용·시설·운전자금) 키워드가 제목/대상에 명확히 보이지 않아 직접 확인 필요",
     "collected_date": "2026-07-27"
+  },
+  {
+    "id": "K스타트업-178644",
+    "source": "K-스타트업",
+    "title": "2026 GH 베이스캠프 참여기업 모집공고",
+    "agency": "경기주택도시공사",
+    "end_date": "20260803",
+    "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=178644",
+    "status": "모호",
+    "reason": "지역/지원대상/업종 제한에는 걸리지 않으나 관심분야(R&D·인력채용·시설·운전자금) 키워드가 제목/대상에 명확히 보이지 않아 직접 확인 필요",
+    "collected_date": "2026-07-28"
+  },
+  {
+    "id": "서울SBA-75a19c40-2087-f111-b404-d4f5ef4a1e33",
+    "source": "서울SBA",
+    "title": "26년 3분기 서울기업 대상 AI 협업툴 플로우 지원기업 모집",
+    "agency": "서울산업진흥원(SBA)",
+    "end_date": "2026-08-21",
+    "url": "https://www.sba.seoul.kr/Pages/BusinessApply/PostingDetail.aspx?p=0&mid=75a19c40-2087-f111-b404-d4f5ef4a1e33",
+    "status": "모호",
+    "reason": "지역/지원대상/업종 제한에는 걸리지 않으나 관심분야(R&D·인력채용·시설·운전자금) 키워드가 제목/대상에 명확히 보이지 않아 직접 확인 필요",
+    "collected_date": "2026-07-28"
   }
 ]
