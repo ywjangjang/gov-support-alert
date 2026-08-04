@@ -1450,5 +1450,60 @@
     "status": "모호",
     "reason": "지역/지원대상/업종 제한에는 걸리지 않으나 관심분야(R&D·인력채용·시설·운전자금) 키워드가 제목/대상에 명확히 보이지 않아 직접 확인 필요",
     "collected_date": "2026-08-01"
+  },
+  {
+    "id": "서울SBA-8ec21ec0-008f-f111-b404-d4f5ef4a1e33",
+    "source": "서울SBA",
+    "title": "2026년 SETEC 전시회 연계 소비자 반응 테스트 지원 참가기업 모집(2차)",
+    "agency": "서울산업진흥원(SBA)",
+    "end_date": "2026-08-26",
+    "url": "https://www.sba.seoul.kr/Pages/BusinessApply/PostingDetail.aspx?p=0&mid=8ec21ec0-008f-f111-b404-d4f5ef4a1e33",
+    "status": "모호",
+    "reason": "지역/지원대상/업종 제한에는 걸리지 않으나 관심분야(R&D·인력채용·시설·운전자금) 키워드가 제목/대상에 명확히 보이지 않아 직접 확인 필요",
+    "collected_date": "2026-08-04"
+  },
+  {
+    "id": "TIPA-S02876",
+    "source": "TIPA",
+    "title": "2026년 제5차 중소기업 R&D 전담은행 투자지원 추천기업(강원충청권) 모집 공고",
+    "agency": "전담은행 투자설명회(IR)",
+    "end_date": "2026. 08. 24",
+    "url": "https://www.smtech.go.kr/front/ifg/no/notice02_detail.do?buclYy=&ancmId=S02876&buclCd=S9171&dtlAncmSn=1&schdSe=MO5005&aplySn=1&searchCondition=&searchKeyword=&pageIndex=1",
+    "status": "부적합",
+    "reason": "공고 제목/대상에 당사 사업장 소재지와 무관한 타 지역 한정 문구가 포함됨",
+    "collected_date": "2026-08-04"
+  },
+  {
+    "id": "기보-65105",
+    "source": "기술보증기금",
+    "title": "2026년 RnD사업화 유동화회사보증 발행계획 공고",
+    "agency": "기술보증기금",
+    "end_date": null,
+    "url": "https://www.kibo.or.kr/main/board/boardType01.do?mode=view&articleNo=65105&article.offset=0&articleLimit=10",
+    "status": "모호",
+    "reason": "지역/지원대상/업종 제한에는 걸리지 않으나 관심분야(R&D·인력채용·시설·운전자금) 키워드가 제목/대상에 명확히 보이지 않아 직접 확인 필요",
+    "collected_date": "2026-08-04"
+  },
+  {
+    "id": "기보-65104",
+    "source": "기술보증기금",
+    "title": "2026년 제2차 유동화회사보증 발행계획 공고",
+    "agency": "기술보증기금",
+    "end_date": null,
+    "url": "https://www.kibo.or.kr/main/board/boardType01.do?mode=view&articleNo=65104&article.offset=0&articleLimit=10",
+    "status": "모호",
+    "reason": "지역/지원대상/업종 제한에는 걸리지 않으나 관심분야(R&D·인력채용·시설·운전자금) 키워드가 제목/대상에 명확히 보이지 않아 직접 확인 필요",
+    "collected_date": "2026-08-04"
+  },
+  {
+    "id": "기보-65100",
+    "source": "기술보증기금",
+    "title": "기업승계 MnA 활성화를 위한  2026년도 컨설팅 지원사업 시행계획 변경공고",
+    "agency": "기술보증기금",
+    "end_date": null,
+    "url": "https://www.kibo.or.kr/main/board/boardType01.do?mode=view&articleNo=65100&article.offset=0&articleLimit=10",
+    "status": "모호",
+    "reason": "지역/지원대상/업종 제한에는 걸리지 않으나 관심분야(R&D·인력채용·시설·운전자금) 키워드가 제목/대상에 명확히 보이지 않아 직접 확인 필요",
+    "collected_date": "2026-08-04"
   }
 ]
