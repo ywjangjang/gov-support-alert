@@ -37,15 +37,17 @@ def collect_all():
 PAGES_URL = "https://ywjangjang.github.io/gov-support-alert/"
 
 
-def format_summary_slack_message(new_fitting):
-    count = len(new_fitting)
-    lines = [f"새 지원사업 공고 *{count}건*이 올라왔습니다."]
-    for ann, judged in new_fitting[:5]:
-        label = f"[{judged['status']}]"
+def format_summary_slack_message(new_fit, new_maybe):
+    """'적합' 공고 목록을 본문으로, '모호' 건수는 한 줄 요약으로 붙인다."""
+    count = len(new_fit)
+    lines = [f"신청 검토가 필요한 새 지원사업 *{count}건*이 올라왔습니다."]
+    for ann, _judged in new_fit[:5]:
         end = f" (~{ann['end_date']})" if ann.get("end_date") else ""
-        lines.append(f"• {label} {ann['title']}{end}")
+        lines.append(f"• {ann['title']}{end}")
     if count > 5:
         lines.append(f"• 외 {count - 5}건")
+    if new_maybe:
+        lines.append(f"\n판단 보류(모호) {len(new_maybe)}건도 함께 올라왔습니다.")
     lines.append(f"\n자세히 보기: {PAGES_URL}")
     return "\n".join(lines)
 
@@ -59,16 +61,23 @@ def main():
     new_announcements = seen_store.pick_new(announcements, seen)
     new_ids = {ann["id"] for ann in new_announcements}
 
-    new_fitting = [
-        (ann, judged) for ann, judged in judged_all
-        if ann["id"] in new_ids and judged["status"] != "부적합"
-    ]
+    # Slack은 '적합' 공고가 실제로 있을 때만 보낸다.
+    # '모호'만 있는 날은 알림 없이 넘어가고, 월별 페이지에는 그대로 쌓인다.
+    new_fit = [(a, j) for a, j in judged_all if a["id"] in new_ids and j["status"] == "적합"]
+    new_maybe = [(a, j) for a, j in judged_all if a["id"] in new_ids and j["status"] == "모호"]
 
-    if new_fitting and config.SLACK_WEBHOOK_URL:
-        notifier.send_slack_message(config.SLACK_WEBHOOK_URL, format_summary_slack_message(new_fitting))
+    sent = bool(new_fit and config.SLACK_WEBHOOK_URL)
+    if sent:
+        notifier.send_slack_message(
+            config.SLACK_WEBHOOK_URL, format_summary_slack_message(new_fit, new_maybe)
+        )
 
     seen_store.save_seen(config.SEEN_ANNOUNCEMENTS_FILE, seen)
-    print(f"총 {len(announcements)}건 수집, 신규 {len(new_announcements)}건, Slack 알림 {len(new_fitting)}건 요약 발송")
+    print(
+        f"총 {len(announcements)}건 수집, 신규 {len(new_announcements)}건 "
+        f"(적합 {len(new_fit)}건 / 모호 {len(new_maybe)}건), "
+        f"Slack {'발송' if sent else '미발송'}"
+    )
 
 
 if __name__ == "__main__":
