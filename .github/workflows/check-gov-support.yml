@@ -30,6 +30,7 @@ jobs:
           KSTARTUP_API_KEY = "${{ secrets.KSTARTUP_API_KEY }}"
           SLACK_WEBHOOK_URL = "${{ secrets.SLACK_WEBHOOK_URL }}"
           SEEN_ANNOUNCEMENTS_FILE = "seen_announcements.json"
+          PENDING_NOTIFICATIONS_FILE = "pending_notifications.json"
           EOF
 
       - name: Run collector
@@ -39,6 +40,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs seen_announcements.json
+          git add docs seen_announcements.json pending_notifications.json
           git diff --cached --quiet || git commit -m "공고 데이터 업데이트 $(date +'%Y-%m-%d')"
           git push
