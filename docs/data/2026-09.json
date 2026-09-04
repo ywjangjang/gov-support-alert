@@ -1703,5 +1703,203 @@
     "status": "부적합",
     "reason": "지원대상이 소상공인으로 한정되어 당사 조건과 맞지 않음",
     "collected_date": "2026-09-03"
+  },
+  {
+    "id": "K스타트업-179130",
+    "source": "K-스타트업",
+    "title": "2026년 서울창업센터 관악 관악S밸리 창업 페스티벌  &apos;창업 아이디어 경진대회&apos; 참가자 모집",
+    "agency": "서울창업센터 관",
+    "end_date": "20260910",
+    "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179130",
+    "status": "부적합",
+    "reason": "자금 지원사업이 아닌 행사·교육·시상 공고('경진대회')",
+    "collected_date": "2026-09-04"
+  },
+  {
+    "id": "K스타트업-179126",
+    "source": "K-스타트업",
+    "title": "2026년 웰컴 투 팁스 3차 참가기업 모집 (동남권)",
+    "agency": "(주)로우파트너스",
+    "end_date": "20260917",
+    "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179126",
+    "status": "부적합",
+    "reason": "창업 초기기업 전용 공고('팁스')로 당사 업력 조건과 맞지 않음",
+    "collected_date": "2026-09-04"
+  },
+  {
+    "id": "K스타트업-179106",
+    "source": "K-스타트업",
+    "title": "2026년 스마트상점 기술보급사업 참여 소상공인 모집공고(2차)",
+    "agency": "소상공인시장진흥공단",
+    "end_date": "20260930",
+    "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179106",
+    "status": "부적합",
+    "reason": "지원대상이 소상공인으로 한정되어 당사 조건과 맞지 않음",
+    "collected_date": "2026-09-04"
+  },
+  {
+    "id": "서울SBA-aaaae876-6aa7-f111-b404-d4f5ef4a1e33",
+    "source": "서울SBA",
+    "title": "SBA×TikTok 일본 틱톡샵 진출 지원사업 참여기업 모집 공고",
+    "agency": "서울산업진흥원(SBA)",
+    "end_date": "2026-09-16",
+    "url": "https://www.sba.seoul.kr/Pages/BusinessApply/PostingDetail.aspx?p=0&mid=aaaae876-6aa7-f111-b404-d4f5ef4a1e33",
+    "status": "모호",
+    "reason": "지역/지원대상/업종 제한에는 걸리지 않으나 관심분야(R&D·인력채용·시설·운전자금) 키워드가 제목/대상에 명확히 보이지 않아 직접 확인 필요",
+    "collected_date": "2026-09-04"
+  },
+  {
+    "id": "서울SBA-4a7a1503-50a7-f111-b404-d4f5ef4a1e33",
+    "source": "서울SBA",
+    "title": "2026 싱가포르 ATF 서울관 참가기업 모집",
+    "agency": "서울산업진흥원(SBA)",
+    "end_date": "2026-09-21",
+    "url": "https://www.sba.seoul.kr/Pages/BusinessApply/PostingDetail.aspx?p=0&mid=4a7a1503-50a7-f111-b404-d4f5ef4a1e33",
+    "status": "모호",
+    "reason": "지역/지원대상/업종 제한에는 걸리지 않으나 관심분야(R&D·인력채용·시설·운전자금) 키워드가 제목/대상에 명확히 보이지 않아 직접 확인 필요",
+    "collected_date": "2026-09-04"
+  },
+  {
+    "id": "서울SBA-0e8811f3-52a7-f111-b404-d4f5ef4a1e33",
+    "source": "서울SBA",
+    "title": "2026 Global SPP (인도네시아) 지원사업 참가기업 모집 공고",
+    "agency": "서울산업진흥원(SBA)",
+    "end_date": "2026-09-21",
+    "url": "https://www.sba.seoul.kr/Pages/BusinessApply/PostingDetail.aspx?p=0&mid=0e8811f3-52a7-f111-b404-d4f5ef4a1e33",
+    "status": "모호",
+    "reason": "지역/지원대상/업종 제한에는 걸리지 않으나 관심분야(R&D·인력채용·시설·운전자금) 키워드가 제목/대상에 명확히 보이지 않아 직접 확인 필요",
+    "collected_date": "2026-09-04"
+  },
+  {
+    "id": "서울SBA-f0cbe22e-56a7-f111-b404-d4f5ef4a1e33",
+    "source": "서울SBA",
+    "title": "2026년 패션기업 연말 맞춤형 제품 제작·프로모션 지원사업 참여기업 모집",
+    "agency": "서울산업진흥원(SBA)",
+    "end_date": "2026-09-21",
+    "url": "https://www.sba.seoul.kr/Pages/BusinessApply/PostingDetail.aspx?p=0&mid=f0cbe22e-56a7-f111-b404-d4f5ef4a1e33",
+    "status": "모호",
+    "reason": "지역/지원대상/업종 제한에는 걸리지 않으나 관심분야(R&D·인력채용·시설·운전자금) 키워드가 제목/대상에 명확히 보이지 않아 직접 확인 필요",
+    "collected_date": "2026-09-04"
+  },
+  {
+    "id": "TIPA-S02877",
+    "source": "TIPA",
+    "title": "2026년 제6차 중소기업 R&D 전담은행 투자지원 추천기업(방산 및 전략기술) 모집 공고",
+    "agency": "전담은행 투자설명회(IR)",
+    "end_date": "2026. 09. 28",
+    "url": "https://www.smtech.go.kr/front/ifg/no/notice02_detail.do?buclYy=&ancmId=S02877&buclCd=S9171&dtlAncmSn=1&schdSe=MO5005&aplySn=1&searchCondition=&searchKeyword=&pageIndex=1",
+    "status": "부적합",
+    "reason": "당사 업종과 무관한 '방산' 분야 전용 공고",
+    "collected_date": "2026-09-04"
+  },
+  {
+    "id": "기보-65680",
+    "source": "기술보증기금",
+    "title": "기술보증기금 비상임이사 공개모집 공고",
+    "agency": "기술보증기금",
+    "end_date": null,
+    "url": "https://www.kibo.or.kr/main/board/boardType01.do?mode=view&articleNo=65680&article.offset=0&articleLimit=10",
+    "status": "부적합",
+    "reason": "지원대상이 '상임이사'로 한정되어 당사 조건과 맞지 않음",
+    "collected_date": "2026-09-04"
+  },
+  {
+    "id": "기보-65470",
+    "source": "기술보증기금",
+    "title": "2026년도 중소기업 기술거래 기반조성사업 시행계획 수정 공고",
+    "agency": "기술보증기금",
+    "end_date": null,
+    "url": "https://www.kibo.or.kr/main/board/boardType01.do?mode=view&articleNo=65470&article.offset=0&articleLimit=10",
+    "status": "모호",
+    "reason": "지역/지원대상/업종 제한에는 걸리지 않으나 관심분야(R&D·인력채용·시설·운전자금) 키워드가 제목/대상에 명확히 보이지 않아 직접 확인 필요",
+    "collected_date": "2026-09-04"
+  },
+  {
+    "id": "기보-65469",
+    "source": "기술보증기금",
+    "title": "2026년「중소기업 기술거래 사업화 촉진 유공 포상」 후보자 모집 공고",
+    "agency": "기술보증기금",
+    "end_date": null,
+    "url": "https://www.kibo.or.kr/main/board/boardType01.do?mode=view&articleNo=65469&article.offset=0&articleLimit=10",
+    "status": "부적합",
+    "reason": "자금 지원사업이 아닌 행사·교육·시상 공고('포상')",
+    "collected_date": "2026-09-04"
+  },
+  {
+    "id": "기보-65399",
+    "source": "기술보증기금",
+    "title": "기술보증기금 비상임이사 공개모집  공고",
+    "agency": "기술보증기금",
+    "end_date": null,
+    "url": "https://www.kibo.or.kr/main/board/boardType01.do?mode=view&articleNo=65399&article.offset=0&articleLimit=10",
+    "status": "부적합",
+    "reason": "지원대상이 '상임이사'로 한정되어 당사 조건과 맞지 않음",
+    "collected_date": "2026-09-04"
+  },
+  {
+    "id": "기보-65395",
+    "source": "기술보증기금",
+    "title": "기술보증기금과 함께 하는 북북 퀴즈쇼!",
+    "agency": "기술보증기금",
+    "end_date": null,
+    "url": "https://www.kibo.or.kr/main/board/boardType01.do?mode=view&articleNo=65395&article.offset=0&articleLimit=10",
+    "status": "모호",
+    "reason": "지역/지원대상/업종 제한에는 걸리지 않으나 관심분야(R&D·인력채용·시설·운전자금) 키워드가 제목/대상에 명확히 보이지 않아 직접 확인 필요",
+    "collected_date": "2026-09-04"
+  },
+  {
+    "id": "기보-65237",
+    "source": "기술보증기금",
+    "title": "2026년 하반기 국민 아차사고 사례 집중 공모",
+    "agency": "기술보증기금",
+    "end_date": null,
+    "url": "https://www.kibo.or.kr/main/board/boardType01.do?mode=view&articleNo=65237&article.offset=0&articleLimit=10",
+    "status": "모호",
+    "reason": "지역/지원대상/업종 제한에는 걸리지 않으나 관심분야(R&D·인력채용·시설·운전자금) 키워드가 제목/대상에 명확히 보이지 않아 직접 확인 필요",
+    "collected_date": "2026-09-04"
+  },
+  {
+    "id": "기보-65108",
+    "source": "기술보증기금",
+    "title": "기술보증기금 비상임이사 공개모집 공고",
+    "agency": "기술보증기금",
+    "end_date": null,
+    "url": "https://www.kibo.or.kr/main/board/boardType01.do?mode=view&articleNo=65108&article.offset=0&articleLimit=10",
+    "status": "부적합",
+    "reason": "지원대상이 '상임이사'로 한정되어 당사 조건과 맞지 않음",
+    "collected_date": "2026-09-04"
+  },
+  {
+    "id": "기보-65105",
+    "source": "기술보증기금",
+    "title": "2026년 RnD사업화 유동화회사보증 발행계획 공고",
+    "agency": "기술보증기금",
+    "end_date": null,
+    "url": "https://www.kibo.or.kr/main/board/boardType01.do?mode=view&articleNo=65105&article.offset=0&articleLimit=10",
+    "status": "모호",
+    "reason": "지역/지원대상/업종 제한에는 걸리지 않으나 관심분야(R&D·인력채용·시설·운전자금) 키워드가 제목/대상에 명확히 보이지 않아 직접 확인 필요",
+    "collected_date": "2026-09-04"
+  },
+  {
+    "id": "기보-65104",
+    "source": "기술보증기금",
+    "title": "2026년 제2차 유동화회사보증 발행계획 공고",
+    "agency": "기술보증기금",
+    "end_date": null,
+    "url": "https://www.kibo.or.kr/main/board/boardType01.do?mode=view&articleNo=65104&article.offset=0&articleLimit=10",
+    "status": "모호",
+    "reason": "지역/지원대상/업종 제한에는 걸리지 않으나 관심분야(R&D·인력채용·시설·운전자금) 키워드가 제목/대상에 명확히 보이지 않아 직접 확인 필요",
+    "collected_date": "2026-09-04"
+  },
+  {
+    "id": "기보-65100",
+    "source": "기술보증기금",
+    "title": "기업승계 MnA 활성화를 위한  2026년도 컨설팅 지원사업 시행계획 변경공고",
+    "agency": "기술보증기금",
+    "end_date": null,
+    "url": "https://www.kibo.or.kr/main/board/boardType01.do?mode=view&articleNo=65100&article.offset=0&articleLimit=10",
+    "status": "모호",
+    "reason": "지역/지원대상/업종 제한에는 걸리지 않으나 관심분야(R&D·인력채용·시설·운전자금) 키워드가 제목/대상에 명확히 보이지 않아 직접 확인 필요",
+    "collected_date": "2026-09-04"
   }
 ]
