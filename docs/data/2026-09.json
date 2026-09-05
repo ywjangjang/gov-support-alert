@@ -1901,5 +1901,16 @@
     "status": "모호",
     "reason": "지역/지원대상/업종 제한에는 걸리지 않으나 관심분야(R&D·인력채용·시설·운전자금) 키워드가 제목/대상에 명확히 보이지 않아 직접 확인 필요",
     "collected_date": "2026-09-04"
+  },
+  {
+    "id": "K스타트업-179111",
+    "source": "K-스타트업",
+    "title": "2026년 인천국제공항공사 상생형 창업·벤처기업 지원사업 모집공고",
+    "agency": "인천국제공항공사",
+    "end_date": "20260915",
+    "url": "https://www.k-startup.go.kr/web/contents/bizpbanc-ongoing.do?schM=view&pbancSn=179111",
+    "status": "부적합",
+    "reason": "공고 제목/대상에 당사 사업장 소재지와 무관한 타 지역 한정 문구가 포함됨",
+    "collected_date": "2026-09-05"
   }
 ]
